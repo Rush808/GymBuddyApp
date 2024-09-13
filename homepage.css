@@ -2,8 +2,7 @@ body {
     padding-top: 99px;
   }
   
-
-.menu {
+  .menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
