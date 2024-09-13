@@ -1,3 +1,8 @@
+body {
+    padding-top: 99px;
+  }
+  
+
 .menu {
     display: flex;
     align-items: center;
