@@ -52,12 +52,26 @@
 
     <main> <!-- Main info for progress is set here-->
       
+      
+
+        <div id="myChart" style="max-width:700px; height:400px"></div>
     
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
     
-    
-    
-    
-    
+        <script>
+          google.charts.load('current',{packages:['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+          
+          // Your Function
+          function drawChart() {
+          
+          }
+          </script>
+
+
+
+
+
     </main>
 
 
