@@ -63,9 +63,7 @@
           google.charts.load('current',{packages:['corechart']});
           google.charts.setOnLoadCallback(drawChart);
           
-          // Your Function
-          function drawChart() {
-          // Set Data
+         // Set Data
 const data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
   ['Italy', 55],
@@ -84,7 +82,9 @@ const options = {
 const chart = new google.visualization.BarChart(document.getElementById('myChart'));
 chart.draw(data, options);
 
-          }
+
+
+
           </script>
 
 
