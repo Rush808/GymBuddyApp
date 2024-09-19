@@ -63,23 +63,20 @@
           google.charts.load('current',{packages:['corechart']});
           google.charts.setOnLoadCallback(drawChart);
           
-          const data = google.visualization.arrayToDataTable([
-  ['Contry', 'Mhl'],
-  ['Italy', 55],
-  ['France', 49],
-  ['Spain', 44],
-  ['USA', 24],
-  ['Argentina', 15]
-]);
+          const xArray = [55, 49, 44, 24, 15];
+const yArray = ["Italy","France","Spain","USA","Argentina"];
 
-// Set Options
-const options = {
-  title: 'World Wide Wine Production'
-};
+const data = [{
+  x: xArray,
+  y: yArray,
+  type: "bar",
+  orientation: "h",
+  marker: {color:"rgba(255,0,0,0.6)"}
+}];
 
-// Draw
-const chart = new google.visualization.BarChart(document.getElementById('myChart'));
-chart.draw(data, options);
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
 
 
     </main>
