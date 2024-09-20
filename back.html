@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>back page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #404040;">
+    <div>
+    <nav class="navbar1">
+        <ul>
+          <li>
+            <a href="chest.html">Chest</a>
+          </li>
+          <li>
+            <a href="arms.html">Arms</a>
+          </li>
+          <li>
+            <a href="legs.html">Legs</a>
+          </li>
+          <li>
+            <a href="back.html">Back</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>  
+    <main>
+        
+    </main>  
+</body>
+<style>
+body {
+  background: #F9F8FD;
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+.navbar1 {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  border: 2px solid #EBECF1;
+  border-radius: 30px;
+  animation: slide-in 1s ease-out;
+  background-color: #EBECF1;
+  justify-content: space-between;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-right: 40px;
+  }
+  li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+    a {
+      color: #2375D8;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    
+    &:hover {
+      background: #427ddc;
+      border: 2px solid #0b1a7f;
+      border-right: 2px solid #1647a1;
+      border-bottom: 2px solid #214de0;
+      a {
+        color: #F9F8FD;
+      }
+      ul {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0px 3px 5px 2px #EBECF1;
+        li {
+          a {
+            color: #F9F8FD;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .toggle:hover {
+        color: #ddd;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex;
+    }
+}
+
+.toggle {
+    display: none; /* Hide toggle by default */
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block; /* Show toggle on mobile */
+    }
+}    
+
+/* style of bottom navbar goes bellow here */
+
+
+</style>
+</html>
