@@ -25,30 +25,17 @@
     <script src="mainpoint.js"></script>
     <!-- Unkown code guessing its JavaScript Dont delete yet.-->
     <div class="container-fluid">
-      <header>
-        <nav class="navbar navbar-expand navbar-default navbar-light fixed-bottom" style="background-color: #e3f2fd;">
-                <div class="container-fluid">
-                    <!-- THE LINKS LINKS GANG -->
-                    <ul class="navbar-nav menu menu1">
-                      <li class="nav-item">
-                        <a class="nav-link" href="settings.html">Settings</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="progress.html">Progress</a>
-                      </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Pet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tracker.html">Workout Tracker</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acheive.html">Achievements</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-      </header>
+      <div>
+        <nav class="bottom-nav">
+            <a href="settings.html">Settings</a>
+            <a href="progress.html">Progress</a>
+            <div class="circle-button">
+            <a href="index.html">Pet</a>
+            </div>
+            <a href="workouts.html">workouts</a>
+            <a href="acheive.html">Achievments</a>
+        </nav>    
+    </div>
     </div>
 
     <main> <!-- Main info for progress is set here-->
@@ -107,5 +94,69 @@ chart.draw(data, options);
   </body>
   <footer> 
   </footer>
+  <style>
+    .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.bottom-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .bottom-nav {
+        height: 50px;
+    }
+
+    .bottom-nav a {
+        padding: 10px;
+    }
+}
+
+/* Circle Button Styles */
+.circle-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #2d2c2c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgb(208, 205, 205);
+    z-index: 1;
+}
+
+.circle-button a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.bottom-nav a:nth-child(3) {
+    display: none; /* Hide the space for the circle button */
+}
+  </style>
 </html>
 
