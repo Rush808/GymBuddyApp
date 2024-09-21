@@ -39,33 +39,37 @@
   </div>
     <main>
       <div class="container1">
-      <img  src="https://bodybuildingfitnessfreak.wordpress.com/wp-content/uploads/2015/07/proper-bench-press1.jpg" alt="bench progress">
-    </div>  
-    <div>
-      <h2 class="text">hello world, this is a bench press.</h2>
+        <img src="https://bodybuildingfitnessfreak.wordpress.com/wp-content/uploads/2015/07/proper-bench-press1.jpg" alt="Bench press" class="image">
+        <p class="text1">This is your text that aligns to the right of the image.</p>
     </div>
+    <hr>
+    
     </main>
 </body>
 
 <style>
   /* style for pcitures go below here */
-  .container1{
+  .container1 {
     display: flex;
+    align-items: center; /* Vertically center the image and text */
     flex-wrap: wrap;
     justify-content: left;
-  }
-  body{
-    margin: 0;
-    padding: 0%;
-  }
-img{
+}
+
+.image {
+    margin-right: 10px; /* Space between image and text */
     display: block;
     margin-left:5%;
     margin-top: 12%;
     width: 175px;
     height: auto;
+  }
+
+.text1 {
     
+  max-width: 300px; /* Optional: set a max width for the text */
 }
+
   /* style for pcitures ends here */
 .text{
   max-width: 300px;
