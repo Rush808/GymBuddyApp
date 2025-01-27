@@ -1,122 +1,48 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Own CSS-->
     <link rel="stylesheet" type="text/css" href="homepage.css">
 
-    <title>Settings</title>
+
+<div class="slidecontainer">
+  <p>Volume</p>
+  <input type="range" min="1" max="100" value="20">
+</div>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<!--This is the button code-->
+
+<h2>Switch</h2>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider"></span>
+</label><br><br>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+
   </head>
-  <body style="background-color: #404040;">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="mainpoint.js"></script>
-    <!-- Unkown code guessing its JavaScript Dont delete yet.-->
-    <div class="container-fluid">
-      <div>
-        <nav class="bottom-nav">
-            <a href="settings.html">Settings</a>
-            <a href="progress.html">Progress</a>
-            <div class="circle-button">
-            <a href="index.html">Pet</a>
-            </div>
-            <a href="workouts.html">workouts</a>
-            <a href="acheive.html">Achievments</a>
-        </nav>    
-    </div>
-    </div>
 
-    <main> <!-- Main info for settings is set here-->
-      <img src="images/slider.png" alt="settings placeholder class="responsive center">
-    </main>
-  </body>
-  <footer> 
-  </footer>
-
-  <style>
-.bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.bottom-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    text-align: center;
-    flex: 1;
-}
-
-.bottom-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .bottom-nav {
-        height: 50px;
-    }
-
-    .bottom-nav a {
-        padding: 10px;
-    }
-}
-
-/* image */
-.responsive {
-  max-width: 200%;
-  height: auto;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Circle Button Styles */
-.circle-button {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: #2d2c2c;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgb(208, 205, 205);
-    z-index: 1;
-}
-
-.circle-button a {
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.bottom-nav a:nth-child(3) {
-    display: none; /* Hide the space for the circle button */
-}
-  </style>
 </html>
-
